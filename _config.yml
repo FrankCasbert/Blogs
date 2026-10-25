@@ -1,0 +1,25 @@
+title: "Frank's Blog"
+description: "记录学习、技术与生活中的思考。"
+author: Frank
+lang: zh-CN
+timezone: Asia/Shanghai
+url: "https://frankcasbert.github.io"
+baseurl: "/Blogs"
+permalink: /posts/:title.html
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts

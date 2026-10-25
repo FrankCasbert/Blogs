@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+<title id="title">Markdown 文章与图片发布流程</title><desc id="desc">将 Markdown 文章和图片上传到 GitHub，Jekyll 自动生成博客网页。</desc>
+<rect width="960" height="360" rx="16" fill="#eef1e9"/>
+<g font-family="system-ui,Microsoft YaHei,sans-serif" text-anchor="middle">
+<text x="480" y="64" fill="#242622" font-size="25" font-weight="600">一篇文章，连同图片一起发布</text>
+<g fill="#faf9f6" stroke="#bcc8b7" stroke-width="2"><rect x="44" y="114" width="240" height="152" rx="10"/><rect x="360" y="114" width="240" height="152" rx="10"/><rect x="676" y="114" width="240" height="152" rx="10"/></g>
+<g fill="#387052" font-size="25" font-weight="600"><text x="164" y="167">Markdown + 图片</text><text x="480" y="167">GitHub</text><text x="796" y="167">博客网页</text></g>
+<g fill="#70766e" font-size="18"><text x="164" y="210">撰写与整理</text><text x="480" y="210">上传并提交</text><text x="796" y="210">自动生成与展示</text></g>
+<g stroke="#387052" stroke-width="3" fill="none"><path d="M300 190h42m-11-9 11 9-11 9"/><path d="M616 190h42m-11-9 11 9-11 9"/></g>
+<text x="480" y="318" font-size="17" fill="#70766e">图片保存在仓库内，网页与文章一起更新。</text>
+</g></svg>

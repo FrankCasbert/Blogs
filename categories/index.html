@@ -1,0 +1,12 @@
+---
+layout: default
+title: 文章分类
+nav: categories
+---
+<section class="page-heading"><p class="eyebrow">COLLECTIONS</p><h1>文章分类</h1><p class="lead">循着兴趣，继续阅读。</p></section>
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+<section class="archive-group" id="{{ category[0] | slugify: 'default' }}"><h2>{{ category[0] | escape }} <small>{{ category[1] | size }}</small></h2><ul class="archive-list">
+{% for post in category[1] %}<li><time>{{ post.date | date: '%Y.%m.%d' }}</time><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>{% endfor %}
+</ul></section>
+{% endfor %}

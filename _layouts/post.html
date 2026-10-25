@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="article">
+  <header class="article-header">
+    <a class="back" href="{{ '/' | relative_url }}">← 所有文章</a>
+    <p class="eyebrow"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time>{% for category in page.categories %} / <a href="{{ '/categories/' | relative_url }}#{{ category | slugify: 'default' | uri_escape }}">{{ category | escape }}</a>{% endfor %}</p>
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.description %}<p class="lead">{{ page.description | escape }}</p>{% endif %}
+  </header>
+  <div class="prose">{{ content }}</div>
+  <footer class="article-footer"><a href="{{ '/archives/' | relative_url }}">浏览文章归档 →</a></footer>
+</article>
